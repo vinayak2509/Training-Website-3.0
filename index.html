@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html data-bs-theme="light">
+  <head>
+    <title>Vinayak Sharma | Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/styles.css">
+  </head>
+  <body>
+    <header class="sticky-top tp">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#home">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="#about-me">About Me</a>
+              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" href="#contact">Contact Me</a>
+              <button class="light"><img class="dark-mode-img" src="Images/moon-dark-theme.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="welcome" id="home">
+      <div class="text-center hello">
+        <h1 class="display-5 fw-bold greet"></h1>
+        <p class="display-7 fw">Scroll Down to learn more about me!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about-me">
+      <div class="container col-l-8 px-4 py-5">
+        <div class="row flex-lg align-items-center py-5">
+          <div class="col-10 col-sm-8 col-lg-4 align-items-center">
+            <img src="Images/pfp.jfif" class="pfp" alt="Bootstrap Themes" loading="lazy">
+          </div>
+          <div class="col-lg-8 mt-5">
+            <p class="lead about-me">My name is Vinayak Sharma. I am a resident of Delhi. I have recently completed my bachelors in technology from Bennett University, Greater Noida and am currently working at Tumlare Software Services as a Trainee Software Engineer. My hobbies including reading a variety of materials such as books,web novels and comics. I enjoy playing video games and listening to different kinds of music such as rap, hip hop, video game bgms etc. I also like to keep up with news related to computer hardware</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="container py-5">
+          <h1 class=" display-7 text-center mb-5">Skills</h1>
+
+          <div id="skillsCarousel" class="carousel slide" data-bs-ride="carousel">
+
+              <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#skillsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Python"></button>
+                  <button type="button" data-bs-target="#skillsCarousel" data-bs-slide-to="1" aria-label="HTML5"></button>
+                  <button type="button" data-bs-target="#skillsCarousel" data-bs-slide-to="2" aria-label="CSS"></button>
+                  <button type="button" data-bs-target="#skillsCarousel" data-bs-slide-to="3" aria-label="JavaScript"></button>
+                  <button type="button" data-bs-target="#skillsCarousel" data-bs-slide-to="4" aria-label="C++"></button>
+                  <button type="button" data-bs-target="#skillsCarousel" data-bs-slide-to="5" aria-label="Data Science"></button>
+              </div>
+
+              <div class="carousel-inner">
+
+                  <div class="carousel-item active">
+                      <img src="Images/python.svg" class="d-block mx-auto skill-logo python" alt="Python">
+                      <div class="d-block p-3 mt-3 skill-desc">
+                          <h5>Python</h5>
+                          <ol class="list-unstyled">
+                              <li>Utilized Python libraries like Pandas and NumPy for data manipulation and analysis.</li>
+                              <li>Implemented machine learning algorithms with libraries such as scikit-learn and TensorFlow.</li>
+                          </ol>
+                      </div>
+                  </div>
+
+                  <div class="carousel-item">
+                      <img src="Images/HTML5_logo_and_wordmark.svg.png" class="d-block mx-auto skill-logo" alt="HTML5">
+                      <div class="d-block p-3 mt-3 skill-desc">
+                          <h5>HTML5</h5>
+                          <ol class="list-unstyled">
+                              <li>Built mobile-friendly layouts that adapt to different screen sizes.</li>
+                              <li>Designed and implemented user-friendly forms with built-in validation.</li>
+                          </ol>
+                      </div>
+                  </div>
+
+                  <div class="carousel-item">
+                      <img src="Images/CSS_Logo.svg" class="d-block mx-auto skill-logo" alt="CSS">
+                      <div class="d-block p-3 mt-3 skill-desc">
+                          <h5>CSS</h5>
+                          <ol class="list-unstyled">
+                              <li>Developed visually appealing styles using CSS3 features, including Flexbox and Grid.</li>
+                              <li>Implemented custom themes and stylesheets to enhance user experience.</li>
+                              <li>Created engaging animations and transitions for interactive elements.</li>
+                          </ol>
+                      </div>
+                  </div>
+
+                  <div class="carousel-item">
+                      <img src="Images/javascript-logo.png" class="d-block mx-auto skill-logo" alt="JavaScript">
+                      <div class="d-block p-3 mt-3 skill-desc">
+                          <h5>JavaScript</h5>
+                          <ol class="list-unstyled">
+                              <li>Built dynamic and interactive web pages by manipulating the DOM.</li>
+                          </ol>
+                      </div>
+                  </div>
+
+                  <div class="carousel-item">
+                      <img src="Images/ISO_C++_Logo.svg.png" class="d-block mx-auto skill-logo" alt="C++">
+                      <div class="d-block p-3 mt-3 skill-desc">
+                          <h5>C++</h5>
+                          <ol class="list-unstyled">
+                              <li>Implemented algorithms and data structures for optimized performance.</li>
+                              <li>Analyzed and optimized code for efficiency and speed.</li>
+                          </ol>
+                      </div>
+                  </div>
+
+                  <div class="carousel-item">
+                      <img src="Images/ds.webp" class="d-block mx-auto skill-logo" alt="Data Science">
+                      <div class="d-block p-3 mt-5 skill-desc">
+                          <h5>Data Science</h5>
+                          <ol class="list-unstyled">
+                              <li>Created informative visualizations using Matplotlib and Seaborn.</li>
+                              <li>Developed predictive models using various algorithms and techniques.</li>
+                          </ol>
+                      </div>
+                  </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#skillsCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#skillsCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+      </div>
+    </section>
+
+    <section class="d-flex flex-column align-items-center contact-me" id="contact">
+      <h1>Contact Me</h1>
+      <div>
+        <p class="email">Email: vinayak2002590@gmail.com</p>
+        <p class="num">Phone Number: +91 98714 91237</p>
+      </div>
+
+      <div>
+        <form class="form-floating">
+          <input type="email" class="form-control name">
+          <label for="floatingInputInvalid">Name</label>
+        </form>
+        <div class="form-floating">
+          <textarea class="form-control msg" style="width: 150%;margin-top: 10px;"></textarea>
+          <label for="floatingTextarea2">Message</label>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary submit-btn" type="submit" style="margin-top: 10px;">Submit form</button>
+        </div>
+      </div>
+
+      
+
+      <div class="d-flex">
+        <div><a href="https://www.linkedin.com/in/vinayak-sharma-611023196/" target="_blank"><img class="logo linkedin" src="Images/LinkedIn-Logo.svg" alt=""></a></div>
+        <div><a href="https://github.com/vinayak2509" target="_blank"><img class="logo github" src="Images/github-6980894_960_720.webp" alt=""></a></div>
+      </div>
+
+    </section>
+
+    <footer class="footer ">
+      copyright @ Vinayak Sharma
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

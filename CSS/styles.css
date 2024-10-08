@@ -1,0 +1,88 @@
+body{
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.tp{
+  background-color: #6256CA;
+}
+.light{
+  background-color: transparent;
+  border: none;
+}
+.dark-mode-img{
+  height: 30px;
+}
+
+.welcome{
+  
+  padding-bottom: 16%;
+  
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.hello{
+  padding-top: 17%;
+}
+.pfp{
+  height: 300px;
+  width: 300px;
+  border: none;
+  border-radius: 150px;
+
+}
+.pfp:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+.about{
+  background-color:#86D293;
+}
+.about-me{
+  opacity: 0;
+  transform: translateX(50%);
+  animation: fade-in 100s ease-in-out forwards;
+  animation-timeline: view();
+  animation-range: entry;
+  animation-delay: 1s;
+}
+@keyframes fade-in{
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.skills{
+  padding-top: 7%;
+  padding-bottom: 7%;
+  background-color: #C1E2A4;
+}
+.skill-logo {
+  height: 250px;
+}
+.skill-desc{
+  text-align: center;
+  font-size: 24px;
+}
+.contact-me{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #FDFAD9;
+}
+.logo{
+  margin-top: 20px;
+  height: 50px;
+}
+.linkedin{
+  margin-right: 10px;
+}
+.github{
+  margin-left: 10px;
+}
+.footer{
+  text-align: center;
+}
+.background-none {
+  background-color: none;
+  background-color: transparent;
+}
