@@ -13,38 +13,50 @@ function textTypingEffect(element,text,i=0){
 textTypingEffect(div,text);
 
 
-
-
+const Theme= JSON.parse(localStorage.getItem('lastTheme')) ||'light'
+if(Theme==='dark'){
+  darkModeToggle()
+}
 
 let light=document.querySelector('.light');
 let img=document.querySelector('.dark-mode-img');
-light.addEventListener("click", 
-  function() {
-
-    document.querySelector('.tp').classList.toggle('background-none');
-    document.querySelector('.about').classList.toggle('background-none');
-    document.querySelector('.skills').classList.toggle('background-none');
-    document.querySelector('.skill-desc').classList.toggle('background-none');
-    document.querySelector('.contact-me').classList.toggle('background-none');
-  
-
-
-    const htmlElement = document.documentElement;
-    const currentTheme = htmlElement.getAttribute('data-bs-theme');
-    if (currentTheme === 'dark') {
-        htmlElement.setAttribute('data-bs-theme', 'light');
-    } else {
-        htmlElement.setAttribute('data-bs-theme', 'dark');
-    }
-
-
-    if(img.src.includes('mode-light')){
-      img.src="Images/moon-dark-theme.svg";
-    } else{
-      img.src="Images/mode-light.svg";
-    }
+light.addEventListener("click", function(){
+  darkModeToggle()
+  if(img.src.includes('mode-light')){
+    img.src="Images/moon-dark-theme.svg";
+  } else{
+    img.src="Images/mode-light.svg";
   }
+  }
+
 )
+
+function darkModeToggle(){
+
+  document.querySelector('.tp').classList.toggle('background-none');
+  document.querySelector('.about').classList.toggle('background-none');
+  document.querySelector('.skills').classList.toggle('background-none');
+  document.querySelector('.skill-desc').classList.toggle('background-none');
+  document.querySelector('.contact-me').classList.toggle('background-none');
+
+
+
+  const htmlElement = document.documentElement;
+  const currentTheme = htmlElement.getAttribute('data-bs-theme');
+  let lastTheme='light';
+  if (currentTheme === 'dark') {
+      htmlElement.setAttribute('data-bs-theme', 'light');
+      lastTheme='light';
+  } else {
+      htmlElement.setAttribute('data-bs-theme', 'dark');
+      lastTheme='dark';
+  }
+
+
+
+  
+  localStorage.setItem('lastTheme', JSON.stringify(lastTheme));
+}
 
 
 
